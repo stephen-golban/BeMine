@@ -1,0 +1,30 @@
+query me {
+  me {
+    id
+    _id
+    name
+    email
+    images {
+      edges {
+        node {
+          id
+          url
+        }
+      }
+    }
+    createdAt
+    userIdentifier
+    userInfo {
+      id
+      birthDate
+      gender
+      genderPublic
+      orientation
+      orientationPublic
+      seekAge
+      createdAt
+      latitude
+      longitude
+    }
+  }
+}

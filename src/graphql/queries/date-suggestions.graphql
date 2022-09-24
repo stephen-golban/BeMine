@@ -1,0 +1,31 @@
+query getDateSuggestions($offset: Int, $limit: Int, $type: InteractionType) {
+  getDateSuggestions(offset: $offset, limit: $limit, type: $type) {
+    edges {
+      node {
+        id
+        type
+        proposal {
+          id
+          accepted
+          location
+          dateTime
+        }
+        partner {
+          id
+          name
+          userInfo {
+            gender
+          }
+          images {
+            edges {
+              node {
+                id
+                url
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

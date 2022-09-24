@@ -1,0 +1,7 @@
+mutation InviteMeProposal($input: inviteMeProposalInput!) {
+  inviteMeProposal(input: $input) {
+    proposal {
+      id
+    }
+  }
+}

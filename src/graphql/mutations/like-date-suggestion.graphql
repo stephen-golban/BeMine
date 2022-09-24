@@ -1,0 +1,10 @@
+mutation LikeDateSuggestion($input: likeDateSuggestionInput!) {
+  likeDateSuggestion(input: $input) {
+    dateSuggestion {
+      id
+      owner {
+        name
+      }
+    }
+  }
+}

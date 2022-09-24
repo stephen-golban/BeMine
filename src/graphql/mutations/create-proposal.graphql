@@ -1,0 +1,7 @@
+mutation CreateProposal($input: createProposalInput!) {
+  createProposal(input: $input) {
+    proposal {
+      id
+    }
+  }
+}
